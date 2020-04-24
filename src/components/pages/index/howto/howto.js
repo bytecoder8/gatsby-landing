@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from './howto.module.scss';
 
 
@@ -47,11 +47,31 @@ function Howto() {
     },
   ]
 
+  const observer = useRef()
+  const cardsRef = useRef(null)
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add(styles.animated)
+          observer.current.unobserve(entry.target)
+        }
+      })
+    })
+
+    observer.current.observe(cardsRef.current)
+
+    return () => {
+      observer.current.disconnect()  
+    }
+  }, [cardsRef])
+
 
   return (
     <section className={styles.howto}>
       <h2 className={styles.header}>How it works</h2>
-      <div className={styles.cards}>
+      <div className={styles.cards} ref={cardsRef}>
         { cards.map( card => 
           <Card card={card} key={card.number} />
         ) }        
