@@ -1,0 +1,84 @@
+.wrapper {
+  max-width: 1200px - 20px;
+  height: 80px;
+  
+  margin: 0 auto 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 0x;
+}
+
+.logo {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+
+  display: flex;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
+  li {
+    margin-right: 30px;
+
+    a {
+      text-decoration: none;
+      transition: all 0.2s;
+      color: #000000;
+
+      &:hover, &:active, &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.loginButton {
+  width: 100px;
+  height: 50px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  border-radius: 50px;
+  background: #000000;
+  color: #FFFFFF;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

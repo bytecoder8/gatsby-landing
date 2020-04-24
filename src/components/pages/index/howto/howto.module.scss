@@ -1,0 +1,159 @@
+.howto {
+  max-width: 1180px;
+  margin: 0 auto 200px auto;
+}
+
+.header {
+  margin-bottom: 40px - 4px;
+  padding: 4px 0 0 0;
+
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+
+}
+
+.cards {
+  max-width: 1180px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  flex-basis: calc(25% - 20px);
+  height: 420px;
+
+  padding: 20px - 4px;
+  margin-right: 20px;
+
+  border: 4px solid #000000;
+
+  &:nth-child(2n) {
+    margin-top: 40px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card-image-container {
+  position: relative;
+
+  width: 240px;
+  height: 240px;
+
+  margin-bottom: 20px;
+}
+
+.card-image {
+  position: absolute;
+}
+
+.card-image-text {
+  position: absolute;
+  z-index: 1;
+
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 160px;
+
+  text-transform: uppercase;
+  
+}
+
+
+.card-header {
+  margin-bottom: 10px - 2px;
+  padding: 2px 0 0 0;
+
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 27px;
+
+  text-transform: uppercase;
+}
+
+.card-text {
+  margin: 0;
+
+  max-height: 80px;
+  overflow: hidden;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card1 {
+  .card-image-container {
+    background: #FFC80E;
+  }
+
+  .card-image-text {
+    left: 78px;
+    top: 40px;
+  }
+
+  .card-image {
+    left: -8px;
+    bottom: -8px;
+  }
+}
+
+.card2 {
+  .card-image-container {
+    background:#FF690F;
+  }
+
+  .card-image-text {
+    left: 78px;
+    top: 40px;
+  }
+
+  .card-image {
+    left: 0;
+    bottom: -8px;
+  }
+}
+
+.card3 {
+  .card-image-container {
+    background: #50AAF5;
+  }
+
+  .card-image-text {
+    left: 78px;
+    top: 40px;
+  }
+
+  .card-image {
+    left: -10px;
+    bottom: 20px;
+  }
+}
+
+.card4 {
+  .card-image-container {
+    background: #FF1437;
+  }
+
+  .card-image-text {
+    left: 78px;
+    top: 40px;
+  }
+
+  .card-image {
+    left: 0;
+    top: 0;
+  }
+}
