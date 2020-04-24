@@ -12,7 +12,7 @@ function Hero() {
         </header>
         <button className={styles.button}>
           Not Available
-          <img className={styles.question} src="/static/svg/q-1.svg" />
+          <img className={styles.question} src="/static/svg/q-1.svg" alt="question mark" />
         </button>
       </div>
     </section>

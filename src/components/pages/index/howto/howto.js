@@ -50,7 +50,7 @@ function Howto() {
 
   return (
     <section className={styles.howto}>
-      <header className={styles.header}>How it works</header>
+      <h2 className={styles.header}>How it works</h2>
       <div className={styles.cards}>
         { cards.map( card => 
           <Card card={card} key={card.number} />
